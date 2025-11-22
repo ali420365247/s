@@ -1,0 +1,28 @@
+<!-- Android manifest snippet: add the following permissions and features to your app's AndroidManifest.xml -->
+<!-- Place inside <manifest> and <application> as appropriate -->
+
+<!-- Required runtime permissions (request at runtime on Android 11+ where needed) -->
+<uses-permission android:name="android.permission.NFC" />
+<uses-permission android:name="android.permission.BLUETOOTH" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+
+<!-- Declare NFC feature (optional) -->
+<uses-feature android:name="android.hardware.nfc" android:required="false" />
+
+<!-- Add these inside <application> -->
+<!-- Example: intent-filter for an app link (deep link) -->
+<!--
+<activity android:name=".MainActivity">
+  <intent-filter>
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="nexuszero" android:host="transfer" />
+  </intent-filter>
+</activity>
+-->
+
+<!-- NOTE: Nearby Connections on Android requires Nearby/Location runtime permissions and proper manifest entries per library docs. -->

@@ -1,0 +1,17 @@
+<!-- iOS Info.plist snippet: add usage descriptions and Multipeer/Network entitlements -->
+<!-- Add the following keys to ios/Runner/Info.plist -->
+
+<!-- NFC usage -->
+<key>NFCReaderUsageDescription</key>
+<string>Used to transfer account data securely between devices using NFC.</string>
+
+<!-- Bluetooth usage -->
+<key>NSBluetoothAlwaysUsageDescription</key>
+<string>Used for peer-to-peer transfer using Bluetooth/WiFi for nearby discovery.</string>
+
+<!-- Local network usage (for Multipeer / WiFi-Direct) -->
+<key>NSLocalNetworkUsageDescription</key>
+<string>Used to discover and connect to nearby devices for offline transfer.</string>
+
+<!-- App Links / Universal Links require associated domains and entitlements configured in Xcode -->
+<!-- MultipeerConnectivity does not require extra plist keys, but you must add Network/Bluetooth usage descriptions above. -->

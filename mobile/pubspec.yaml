@@ -1,0 +1,27 @@
+name: nexus_mobile
+description: "Nexus mobile app (MVP scaffold)"
+publish_to: "none"
+version: 0.1.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.0
+  nfc_manager: ^3.5.0
+  nearby_connections: ^5.0.0
+  wifi_direct: ^2.1.0
+  multicast_connectivity: ^1.4.0
+  qr_flutter: ^4.1.0
+  crypto: ^3.0.3
+  permission_handler: ^10.4.0
+  cryptography: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
